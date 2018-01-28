@@ -19,3 +19,8 @@ test('Testing with string, should ignore string: ', () =>
 test('No arguments: ', () =>
 	expect(longDelay()).
 		toBe(0));
+
+test('Number as string: ', ()=>{
+	expect(longDelay(1)('2')('3')()).
+		toBe(6);
+});

@@ -14,7 +14,7 @@ test('Testing with null: ', () =>
 		toBe('Error: only numbers accepted')
 );
 
-test('Testing with any string: ', () =>
+test('Testing with undefined: ', () =>
 	expect(delay(undefined)(0)).
 		toBe('Error: only numbers accepted')
 );
